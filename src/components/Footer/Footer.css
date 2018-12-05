@@ -1,0 +1,17 @@
+.page-footer {
+    /* For Sticky Footer instead of Fixed: delete these */
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    /* --------------- */
+    font-family: agilis;
+    background-color: black;
+    padding-top : 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#footer-copyright {
+    font-size: 1.5em;
+    font-style: oblique
+}

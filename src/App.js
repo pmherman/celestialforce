@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
 import './App.css';
-import { PageHeader, Image } from 'react-bootstrap';
-import logo from './images/logo.jpg'
+import Actors from './components/Actors';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from './components/Home';
+
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <Image src={logo} alt="Logo" rounded/>
-          <PageHeader>
-            <large>Coming Soon...</large>
-          </PageHeader>
-      </div>
+      <Router>
+          <div className="App">
+            <NavBar />
+            <Switch>
+               <Route exact path="/" component={ Home } />
+               <Route path='/actors' component={ Actors } />
+            </Switch>
+            <Footer />
+          </div>
+      </Router>
+
     );
   }
 }
