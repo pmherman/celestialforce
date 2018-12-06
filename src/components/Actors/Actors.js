@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row, Image, ListGroup, Thumbnail } from 'react-bootstrap';
 import './Actors.css';
-import pictures from '../../images';
 
 export default class Actors extends Component {
     render() {
