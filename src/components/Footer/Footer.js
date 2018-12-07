@@ -7,8 +7,8 @@ class Footer extends Component {
     render() {
         return (
             <div>
-                <footer className="page-footer text-center mt-4 wow fadeIn">
-                    <span id="footer-copyright">Copyright 2019. All Rights Reserved</span>
+                <footer className="page-footer text-center">
+                    <span id="footer-copyright">Copyright 2019. All Rights Reserved - Developed by <a href='http://paulmherman.com' target='_blank'>Paul M Herman</a></span>
                 </footer>
             </div>
 
