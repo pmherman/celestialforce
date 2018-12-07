@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Image, PageHeader } from 'react-bootstrap';
-
 import './Footer.css';
 
 class Footer extends Component {
