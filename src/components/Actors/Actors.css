@@ -1,3 +1,24 @@
 .hero {
     width: 320px;
+
+}
+
+#gRed {
+    color: red;
+}
+
+#gGreen {
+    color: green;
+}
+
+#gYellow {
+    color: rgb(165, 165, 0);
+}
+
+#gPink {
+    color: rgb(255, 0, 170)
+}
+
+#gBlue {
+    color: blue
 }
