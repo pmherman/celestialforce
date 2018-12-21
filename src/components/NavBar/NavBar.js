@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.jpg';
 import './NavBar.css';
 
 
@@ -23,6 +22,9 @@ class NavBar extends Component {
                         <NavItem className="text-center" eventKey={2} componentClass={Link} href="/actors" to="/actors">
                             Actors
                         </NavItem>
+                        <NavItem className="text-center" eventKey={2} componentClass={Link} href="/videos" to="/videos">
+                            Videos
+                        </NavItem>                        
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

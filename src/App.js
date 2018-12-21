@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Actors from './components/Actors';
+import Videos from './components/Videos';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -17,6 +18,7 @@ class App extends Component {
             <Switch>
                <Route exact path="/" component={ Home } />
                <Route path='/actors' component={ Actors } />
+               <Route path='/videos' component={ Videos } />
             </Switch>
             <Footer />
           </div>
