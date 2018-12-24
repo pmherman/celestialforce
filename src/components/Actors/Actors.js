@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row, ListGroup, Thumbnail, Modal, Button, Image } from 'react-bootstrap';
 import './Actors.css';
+import redHeroImage from '../../images/heroes/red.jpg';
+import greenHeroImage from '../../images/heroes/green.jpg'
+import blueHeroImage from '../../images/heroes/blue.jpg'
+import yellowHeroImage from '../../images/heroes/yellow.jpg'
+import pinkHeroImage from '../../images/heroes/pink.jpg'
+
 
 export default class Actors extends Component {
     
@@ -96,25 +102,25 @@ export default class Actors extends Component {
                     <Row>
                         <ListGroup>
                         <Col xs={12} lg={4}>
-                        <Thumbnail className='hero' onClick={this.guardianRed} src='https://i.ytimg.com/vi/gQz-RaBStNQ/hqdefault.jpg' alt='Red Hero'>
+                        <Thumbnail className='hero' onClick={this.guardianRed} src={redHeroImage} alt='Red Hero'>
                             <h3>Red Guardian</h3>
                         </Thumbnail>
-                        <Thumbnail className='hero' onClick={this.guardianGreen} src='http://news.tokunation.com/wp-content/uploads/sites/5/2017/05/Shishiranger.jpg' alt='Green Hero'>
+                        <Thumbnail className='hero' onClick={this.guardianGreen} src={greenHeroImage} alt='Green Hero'>
                             <h3>Green Guardian</h3>
                         </Thumbnail>
                         </Col>
                         <Col xs={12} lg={4}>
-                            <Thumbnail className='hero' onClick={this.guardianBlue} src='https://vignette.wikia.nocookie.net/powerrangers/images/a/a2/TenmaRanger.jpg/revision/latest?cb=20110122000203' alt='Blue Hero'>
+                            <Thumbnail className='hero' onClick={this.guardianBlue} src={blueHeroImage} alt='Blue Hero'>
                                 <h3>Blue Guardian</h3>
                             </Thumbnail>
                         </Col>
                         <Col xs={12} lg={4}>
-                            <Thumbnail className='hero'  onClick={this.guardianYellow} src='https://vignette.wikia.nocookie.net/powerrangers/images/1/1f/DairaYellow.jpg/revision/latest?cb=20110503193534' alt='Yellow Hero'>
+                            <Thumbnail className='hero'  onClick={this.guardianYellow} src={yellowHeroImage} alt='Yellow Hero'>
                                 <h3>Yellow Guardian</h3>
                             </Thumbnail>      
                         </Col>
                         <Col xs={12} lg={4}>
-                            <Thumbnail className='hero' onClick={this.guardianPink} src='https://iv1.lisimg.com/image/10071919/720full-rin-%28dairanger%29.jpg' alt='Pink Hero'>
+                            <Thumbnail className='hero' onClick={this.guardianPink} src={pinkHeroImage} alt='Pink Hero'>
                                 <h3>Pink Guardian</h3>
                             </Thumbnail>      
                         </Col>
